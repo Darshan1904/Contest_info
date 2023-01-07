@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 1.2rem;
+}
+
+.navbar-brand{
+    margin-left: 3vw;
+}
+
+#list{
+    background-color: rgba(146, 230, 241, 0.699);
+    overflow-x: hidden;
+    margin: auto;
+}
+
+#card{
+    background-color: rgba(226, 217, 217, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #0d0d0d;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+#card:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    z-index: 5;
+}
+
+#codeforces,#codechef,#hackerrank,#hackerearth{
+    cursor: pointer;
+}
+
+#reg{
+    background-color: rgb(72, 72, 235);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid rgb(72, 72, 235);
+    border-radius: 5px;
+    margin: auto;
+}
+
+#reg a{
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+#img{
+    background: transparent;
+}
+
+@media screen and (max-width:768px){
+    *{
+        font-size: medium;
+    }
+    #col{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #card{
+        width: 90%;
+    }
+}
